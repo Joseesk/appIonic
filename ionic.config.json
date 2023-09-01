@@ -1,0 +1,7 @@
+{
+  "name": "appXIonic",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
