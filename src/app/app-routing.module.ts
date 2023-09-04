@@ -11,6 +11,26 @@ const routes: Routes = [
     redirectTo: 'home',
     pathMatch: 'full'
   },
+  {
+    path: 'login',
+    loadChildren: () => import('./login/login.module').then( m => m.LoginPageModule)
+  },
+  {
+    path: 'register',
+    loadChildren: () => import('./register/register.module').then( m => m.RegisterPageModule)
+  },
+  {
+    path: 'forgot-password',
+    loadChildren: () => import('./forgot-password/forgot-password.module').then( m => m.ForgotPasswordPageModule)
+  },
+  {
+    path: 'user-main-page',
+    loadChildren: () => import('./user-main-page/user-main-page.module').then( m => m.UserMainPagePageModule)
+  },
+  {
+    path: 'compare-password',
+    loadChildren: () => import('./compare-password/compare-password.module').then( m => m.ComparePasswordPageModule)
+  },
 ];
 
 @NgModule({
